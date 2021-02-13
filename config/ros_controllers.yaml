@@ -1,0 +1,268 @@
+# MoveIt-specific simulation settings
+moveit_sim_hw_interface:
+  joint_model_group: controllers_initial_group_
+  joint_model_group_pose: controllers_initial_pose_
+# Settings for ros_control control loop
+generic_hw_control_loop:
+  loop_hz: 300
+  cycle_time_error_threshold: 0.01
+# Settings for ros_control hardware interface
+hardware_interface:
+  joints:
+    - left_front_wheel_joint
+    - left_wheel_joint
+    - rear_wheel_joint
+    - right_front_wheel_joint
+    - right_wheel_joint
+    - torso_yaw_joint
+    - head_yaw_joint
+    - head_pitch_joint
+    - left_arm_shoulder_pitch_joint
+    - left_arm_shoulder_roll_joint
+    - left_arm_shoulder_yaw_joint
+    - left_arm_elbow_roll_joint
+    - left_arm_forearm_yaw_joint
+    - left_arm_wrist_roll_joint
+    - left_gripper_joint
+    - right_arm_shoulder_pitch_joint
+    - right_arm_shoulder_roll_joint
+    - right_arm_shoulder_yaw_joint
+    - right_arm_elbow_roll_joint
+    - right_arm_forearm_yaw_joint
+    - right_arm_wrist_roll_joint
+    - right_gripper_joint
+    - tray_pitch_joint
+  sim_control_mode: 1  # 0: position, 1: velocity
+# Publish all joint states
+# Creates the /joint_states topic necessary in ROS
+joint_state_controller:
+  type: joint_state_controller/JointStateController
+  publish_rate: 50
+controller_list:
+  []
+bubot_position_controller:
+  type: position_controllers/JointPositionController
+  joints:
+    - left_arm_shoulder_pitch_joint
+    - left_arm_shoulder_roll_joint
+    - left_arm_shoulder_yaw_joint
+    - left_arm_elbow_roll_joint
+    - left_arm_forearm_yaw_joint
+    - left_arm_wrist_roll_joint
+    - right_arm_shoulder_pitch_joint
+    - right_arm_shoulder_roll_joint
+    - right_arm_shoulder_yaw_joint
+    - right_arm_elbow_roll_joint
+    - right_arm_forearm_yaw_joint
+    - right_arm_wrist_roll_joint
+    - torso_yaw_joint
+    - right_arm_shoulder_pitch_joint
+    - right_arm_shoulder_roll_joint
+    - right_arm_shoulder_yaw_joint
+    - right_arm_elbow_roll_joint
+    - right_arm_forearm_yaw_joint
+    - right_arm_wrist_roll_joint
+    - torso_yaw_joint
+    - left_arm_shoulder_pitch_joint
+    - left_arm_shoulder_roll_joint
+    - left_arm_shoulder_yaw_joint
+    - left_arm_elbow_roll_joint
+    - left_arm_forearm_yaw_joint
+    - left_arm_wrist_roll_joint
+    - left_gripper_joint
+    - right_gripper_joint
+    - torso_yaw_joint
+    - head_yaw_joint
+    - head_pitch_joint
+    - torso_yaw_joint
+    - tray_pitch_joint
+    - torso_yaw_joint
+    - tray_pitch_joint
+    - head_yaw_joint
+    - head_pitch_joint
+  gains:
+    left_arm_shoulder_pitch_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    left_arm_shoulder_roll_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    left_arm_shoulder_yaw_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    left_arm_elbow_roll_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    left_arm_forearm_yaw_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    left_arm_wrist_roll_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    right_arm_shoulder_pitch_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    right_arm_shoulder_roll_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    right_arm_shoulder_yaw_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    right_arm_elbow_roll_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    right_arm_forearm_yaw_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    right_arm_wrist_roll_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    torso_yaw_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    right_arm_shoulder_pitch_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    right_arm_shoulder_roll_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    right_arm_shoulder_yaw_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    right_arm_elbow_roll_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    right_arm_forearm_yaw_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    right_arm_wrist_roll_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    torso_yaw_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    left_arm_shoulder_pitch_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    left_arm_shoulder_roll_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    left_arm_shoulder_yaw_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    left_arm_elbow_roll_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    left_arm_forearm_yaw_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    left_arm_wrist_roll_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    left_gripper_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    right_gripper_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    torso_yaw_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    head_yaw_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    head_pitch_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    torso_yaw_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    tray_pitch_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    torso_yaw_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    tray_pitch_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    head_yaw_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    head_pitch_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1

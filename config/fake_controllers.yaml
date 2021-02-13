@@ -1,0 +1,60 @@
+controller_list:
+  - name: fake_left_arm_controller
+    joints:
+      - left_arm_shoulder_pitch_joint
+      - left_arm_shoulder_roll_joint
+      - left_arm_shoulder_yaw_joint
+      - left_arm_elbow_roll_joint
+      - left_arm_forearm_yaw_joint
+      - left_arm_wrist_roll_joint
+  - name: fake_right_arm_controller
+    joints:
+      - right_arm_shoulder_pitch_joint
+      - right_arm_shoulder_roll_joint
+      - right_arm_shoulder_yaw_joint
+      - right_arm_elbow_roll_joint
+      - right_arm_forearm_yaw_joint
+      - right_arm_wrist_roll_joint
+  - name: fake_torso_right_arm_controller
+    joints:
+      - torso_yaw_joint
+      - right_arm_shoulder_pitch_joint
+      - right_arm_shoulder_roll_joint
+      - right_arm_shoulder_yaw_joint
+      - right_arm_elbow_roll_joint
+      - right_arm_forearm_yaw_joint
+      - right_arm_wrist_roll_joint
+  - name: fake_torso_left_arm_controller
+    joints:
+      - torso_yaw_joint
+      - left_arm_shoulder_pitch_joint
+      - left_arm_shoulder_roll_joint
+      - left_arm_shoulder_yaw_joint
+      - left_arm_elbow_roll_joint
+      - left_arm_forearm_yaw_joint
+      - left_arm_wrist_roll_joint
+  - name: fake_left_gripper_controller
+    joints:
+      - left_gripper_joint
+  - name: fake_right_gripper_controller
+    joints:
+      - right_gripper_joint
+  - name: fake_torso_head_controller
+    joints:
+      - torso_yaw_joint
+      - head_yaw_joint
+      - head_pitch_joint
+  - name: fake_torso_tray_controller
+    joints:
+      - torso_yaw_joint
+      - tray_pitch_joint
+  - name: fake_torso_controller
+    joints:
+      - torso_yaw_joint
+  - name: fake_tray_controller
+    joints:
+      - tray_pitch_joint
+  - name: fake_head_controller
+    joints:
+      - head_yaw_joint
+      - head_pitch_joint

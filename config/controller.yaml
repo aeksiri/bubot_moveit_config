@@ -1,0 +1,106 @@
+controller_list:
+-  name: left_arm_controller
+   action_ns: follow_joint_trajectory
+   type: FollowJointTrajectory
+   default: true
+   joints:
+      - left_arm_shoulder_pitch_joint
+      - left_arm_shoulder_roll_joint
+      - left_arm_shoulder_yaw_joint
+      - left_arm_elbow_roll_joint
+      - left_arm_forearm_yaw_joint
+      - left_arm_wrist_roll_joint
+
+-  name: right_arm_controller
+   action_ns: follow_joint_trajectory
+   type: FollowJointTrajectory
+   default: true
+   joints:
+      - right_arm_shoulder_pitch_joint
+      - right_arm_shoulder_roll_joint
+      - right_arm_shoulder_yaw_joint
+      - right_arm_elbow_roll_joint
+      - right_arm_forearm_yaw_joint
+      - right_arm_wrist_roll_joint
+
+-  name: torso_left_arm_controller
+   action_ns: follow_joint_trajectory
+   type: FollowJointTrajectory
+   default: true
+   joints:
+      - torso_yaw_joint
+      - left_arm_shoulder_pitch_joint
+      - left_arm_shoulder_roll_joint
+      - left_arm_shoulder_yaw_joint
+      - left_arm_elbow_roll_joint
+      - left_arm_forearm_yaw_joint
+      - left_arm_wrist_roll_joint
+
+-  name: torso_right_arm_controller
+   action_ns: follow_joint_trajectory
+   type: FollowJointTrajectory
+   default: true
+   joints:
+      - torso_yaw_joint
+      - right_arm_shoulder_pitch_joint
+      - right_arm_shoulder_roll_joint
+      - right_arm_shoulder_yaw_joint
+      - right_arm_elbow_roll_joint
+      - right_arm_forearm_yaw_joint
+      - right_arm_wrist_roll_joint
+
+-  name: torso_head_controller
+   action_ns: follow_joint_trajectory
+   type: FollowJointTrajectory
+   default: true
+   joints:
+      - torso_yaw_joint
+      - head_yaw_joint
+      - head_pitch_joint
+
+-  name: head_controller
+   action_ns: follow_joint_trajectory
+   type: FollowJointTrajectory
+   default: true
+   joints:
+      - head_yaw_joint
+      - head_pitch_joint
+
+-  name: torso_tray_controller
+   action_ns: follow_joint_trajectory
+   type: FollowJointTrajectory
+   default: true
+   joints:
+      - torso_yaw_joint
+      - tray_pitch_joint     
+
+-  name: tray_controller
+   action_ns: follow_joint_trajectory
+   type: FollowJointTrajectory
+   default: true
+   joints:
+      - tray_pitch_joint 
+
+-  name: torso_controller
+   action_ns: follow_joint_trajectory
+   type: FollowJointTrajectory
+   default: true
+   joints:
+      - torso_yaw_joint
+
+-  name: left_hand_controller
+   action_ns: gripper_action
+   type: GripperCommand
+   default: true
+   parallel: true
+   joints:
+      - left_gripper_joint
+
+-  name: right_hand_controller
+   action_ns: gripper_action
+   type: GripperCommand
+   default: true
+   parallel: true
+   joints:
+      - right_gripper_joint
+
